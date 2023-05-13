@@ -1,0 +1,26 @@
+@media screen and (max-width: 880px) {
+    .main .home .left {
+        width: 100%;
+    }
+    .main .home .left .avatar, .main .home .left .title {
+        transition: all .2s;
+    }
+    .default .main .home .left .avatar {
+        /* width: 80px;
+        height: 80px; */
+        transform: scale(.6);
+        left: calc(50% - 100px);
+    }
+    .default .main .home .left .title {
+        top: 75px;
+        left: calc(50% - 20px);
+        width: 120px;
+        text-align: right;
+        height: fit-content;
+        font-weight: normal;
+    }
+
+    .main .home .right {
+        display: none;
+    }
+}

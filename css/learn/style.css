@@ -1,0 +1,113 @@
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 114514px;
+    background-color: rgba(0, 0, 0, .1);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    user-select: none;
+}
+
+#left {
+    position: fixed;
+    width: 250px;
+    height: calc(100% - 4px);
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+}
+#left .entry {
+    background-color: #fff;
+    margin: 2px 8px 6px 10px;
+    padding: 10px 14px;
+    border-radius: 4px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+}
+.left-active {
+    color: #fff;
+    background: linear-gradient(90deg, #0078d4, #1e9fff);
+}
+
+#right {
+    position: fixed;
+    width: calc(100% - 250px);
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+#right .entry {
+    display: none;
+}
+.right-active {
+    display: block !important;
+}
+#right .entry .key {
+    font-size: 28px;
+    font-weight: bolder;
+    margin: 10px 0 20px 30px;
+}
+#right .entry .value {
+    font-size: 16px;
+    margin: 0 0 0 30px;
+}
+#right .entry .value a {
+    color: #0078d4;
+    text-decoration: none;
+    transition: all .1s;
+}
+#right .entry .value a:hover {
+    color: #1e9fff;
+}
+#right .entry .value a:active {
+    color: #0078d4;
+}
+
+.btn {
+    position: fixed;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .1);
+    border: none;
+    padding: 0;
+    width: 90px;
+    height: 36px;
+    font-size: 16px;
+    border-radius: 4px;
+    bottom: 8px;
+}
+.btn-disabled {
+    background: #bbb !important;
+    color: #fff !important;
+    filter: none !important;
+    cursor: not-allowed !important;
+}
+#previous {
+    background-color: #fff;
+    right: 106px;
+}
+#previous:hover {
+    filter: brightness(.96);
+}
+#previous:active {
+    filter: brightness(.94);
+}
+#next {
+    background: linear-gradient(90deg, #0078d4, #1e9fff);
+    color: #fff;
+    right: 8px;
+}
+#next:hover {
+    filter: brightness(.92);
+}
+#next:active {
+    filter: brightness(.86);
+}

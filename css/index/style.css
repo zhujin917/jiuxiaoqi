@@ -1,0 +1,284 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    user-select: none;
+}
+
+.background, .background .image, .background .mask {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.background {
+    position: fixed;
+    z-index: -1;
+}
+.background .image {
+    position: absolute;
+    object-fit: cover;
+}
+.background .mask {
+    position: absolute;
+    backdrop-filter: blur(10px) brightness(.9);
+}
+
+.background .info {
+    position: absolute;
+    border-radius: 6px;
+    width: 178px;
+    height: 80px;
+    left: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, .6); */
+}
+.background .info img {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+}
+.background .info h1 {
+    position: absolute;
+    left: 75px;
+    top: 15px;
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}
+.background .info p {
+    position: absolute;
+    left: 75px;
+    top: 45px;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+}
+
+.background .music {
+    position: fixed;
+    right: -114%;
+    bottom: 15px;
+    height: 70px;
+    width: 270px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    transition: all .5s;
+}
+.background .music img {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: calc(100% - 10px);
+    border-radius: 4px;
+}
+.background .music h1 {
+    margin: 0;
+    font-size: 20px;
+    position: absolute;
+    left: 75px;
+    top: 10px;
+}
+.background .music p {
+    margin: 0;
+    font-size: 14px;
+    position: absolute;
+    left: 75px;
+    top: 40px;
+}
+
+.window {
+    position: fixed;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    background-color: rgba(255, 255, 255, .9);
+    box-shadow: 0 10px 50px rgba(0, 0, 0, .25);
+    border-radius: 8px;
+}
+
+.main {
+    max-width: 880px;
+    max-height: 560px;
+}
+.main .home {
+    transition: all .2s;
+}
+.main .home .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 380px;
+    height: 100%;
+    text-align: center;
+}
+.main .home .left .avatar, .main .home .left .cover {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 114514px;
+}
+.main .home .left .avatar {
+    width: 160px;
+    height: 160px;
+    border: solid 4px #0078d4;
+    padding: 8px;
+}
+.main .home .left .avatar img, .main .home .left .cover img {
+    width: 100%;
+    height: 100%;
+    border-radius: 114514px;
+}
+
+@keyframes coverAnimation {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.main .home .left .cover {
+    height: 120px;
+    width: 120px;
+    border: 32px #333 solid;
+    display: none;
+}
+.main .home .left .cover img {
+    animation: coverAnimation 20s linear infinite;
+}
+.main .home .left .cover p {
+    background: linear-gradient(90deg, #0078d4, #1e9fff);
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    margin: 0;
+    padding: 10px 14px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+    position: absolute;
+    top: 180px;
+    left: 200px;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.main .home .title {
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+    width: 100%;
+    font-size: 34px;
+    margin: 0;
+}
+.main .home .left .intro {
+    position: absolute;
+    left: 0;
+    bottom: 54px;
+    width: 100%;
+}
+.main .home .left .text {
+    font-size: 16px;
+    margin: 14px 0;
+}
+
+.main .home .right {
+    width: 500px;
+    height: calc(100% - 60px);
+    padding: 30px 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.main .home .right .menu {
+    position: relative;
+    width: calc(100% - 42px);
+    height: 106px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+    margin: 15px 0;
+}
+.main .home .right .menu:hover {
+    background-color: rgba(255, 255, 255, .5);
+}
+.main .home .right .menu .icon {
+    position: absolute;
+    left: 18px;
+    top: 20px;
+    height: 38px;
+    width: 38px;
+}
+.main .home .right .menu .title {
+    position: absolute;
+    margin: 0;
+    left: 64px;
+    top: 20px;
+    font-size: 26px;
+}
+.main .home .right .menu .subtitle {
+    position: absolute;
+    margin: 0;
+    left: 64px;
+    top: 60px;
+    font-size: 16px;
+}
+
+.main .loading {
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+.main .content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .2s;
+    opacity: 0;
+    display: none;
+}
+.main .content .titleBar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+}
+.main .content .titleBar .btn {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    padding: 5px 6px 5px 4px;
+    border-radius: 4px;
+}
+.main .content .titleBar .btn:hover {
+    background-color: rgba(0, 0, 0, .03);
+}
+.main .content .titleBar .btn:active {
+    background-color: rgba(0, 0, 0, .05);
+}
+.main .content .titleBar .btn img {
+    height: 100%;
+    width: 100%;
+}
+.main .content .titleBar p {
+    position: absolute;
+    left: 50px;
+    top: 13px;
+    margin: 0;
+    font-size: 17px;
+}
+.main .content .frame {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 50px);
+    border: none;
+}

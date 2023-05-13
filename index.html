@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <title>玖小柒的个人网站</title>
+    <link rel="icon" type="image/webp" href="/img/avatar.webp">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="/css/index/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/index/mobile.css">
+    <link rel="stylesheet" type="text/css" href="/css/index/animation.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="/js/index/script.js"></script>
+</head>
+
+<body class="default">
+    <div class="window main">
+        <div class="home" id="home">
+            <div class="left">
+                <div class="avatar" id="main_home_left_avatar">
+                    <img src="/img/avatar.webp" />
+                </div>
+                <div class="cover" id="main_home_left_cover">
+                    <img src="/img/cover.webp" />
+                    <p>来点音乐？</p>
+                </div>
+                <h1 class="title">玖小柒</h1>
+                <div class="intro">
+                    <p class="text">姓名「朱瑾」，在校初三学生</p>
+                    <p class="text">热爱编程，时不时捣鼓些好玩的东西</p>
+                    <p class="text">向往提瓦特大陆，信仰智慧之神</p>
+                    <p class="text">对世间的一切充满好奇</p>
+                    <p class="text">请多指教！</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="menu" id="home_learn">
+                    <img class="icon" src="/img/icon/right.svg" />
+                    <h1 class="title">了解</h1>
+                    <p class="subtitle">通过各种词条，了解我究竟是一个怎样的人。</p>
+                </div>
+                <div class="menu" id="home_projects">
+                    <img class="icon" src="/img/icon/right.svg" />
+                    <h1 class="title">项目</h1>
+                    <p class="subtitle">这是我开发过或正在开发的主要项目。</p>
+                </div>
+                <div class="menu" id="home_contact">
+                    <img class="icon" src="/img/icon/right.svg" />
+                    <h1 class="title">联系</h1>
+                    <p class="subtitle">您可以通过这些渠道联系上我。</p>
+                </div>
+                <div class="menu" id="home_donate">
+                    <img class="icon" src="/img/icon/right.svg" />
+                    <h1 class="title">捐助</h1>
+                    <p class="subtitle">如果您有条件，不妨伸出援手，这对我真的很重要！</p>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="main_content">
+            <div class="titleBar">
+                <div class="btn" id="main_content_close">
+                    <img src="/img/icon/left.svg" />
+                </div>
+                <p id="main_content_title"></p>
+            </div>
+            <iframe class="frame" id="main_content_frame"></iframe>
+        </div>
+        <svg id="main_loading" class="loading" viewBox="0 0 16 16">
+            <circle class="circle1" cx="8px" cy="8px" r="7px"></circle>
+            <circle class="circle2" cx="8px" cy="8px" r="7px"></circle>
+        </svg>
+    </div>
+    <div class="background">
+        <img class="image" src="/img/background.webp" />
+        <div class="mask"></div>
+        <div class="info">
+            <img src="/img/icon/local.svg" />
+            <h1>降诸魔山</h1>
+            <p>须弥境内</p>
+        </div>
+        <div class="music" id="background_music">
+            <img src="/img/cover.webp">
+            <h1>あいつら全員同窓会</h1>
+            <p>ずっと真夜中でいいのに</p>
+            <audio id="background_music_audio" src="http://music.163.com/song/media/outer/url?id=1854474192.mp3"
+                preload="auto" loop hidden></audio>
+        </div>
+    </div>
+</body>
+
+</html>
