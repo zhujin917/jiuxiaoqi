@@ -1,4 +1,4 @@
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 879px) {
     .project {
         min-width: calc(100% - 10px);
     }
