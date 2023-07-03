@@ -1,0 +1,8 @@
+@media screen and (max-width: 880px) {
+    body {
+        height: auto;
+    }
+    .contact {
+        margin-bottom: 15px;
+    }
+}

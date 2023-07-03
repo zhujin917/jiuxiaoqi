@@ -1,0 +1,12 @@
+@media screen and (max-width: 880px) {
+    #left {
+        width: 160px;
+    }
+    #right {
+        width: calc(100% - 160px);
+    }
+    #right .key, #right .value {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+}
