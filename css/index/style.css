@@ -183,6 +183,13 @@ html, body {
     font-size: 16px;
     margin: 14px 0;
 }
+.main .home .left .text a {
+    text-decoration: none;
+    color: #00B935;
+}
+.main .home .left .text a:hover {
+    text-decoration: underline;
+}
 
 .main .home .right {
     width: 500px;
