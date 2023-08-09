@@ -44,3 +44,13 @@ function showHomeContent(name) {
     document.getElementById("main_loading").style.display = "block";
     document.getElementById("main_content_frame").src = `/html/${name}.html`;
 };
+
+window.addEventListener("load", () => {
+    let hash = location.hash;
+    if (hash.length > 1) {
+        let targetDom = document.getElementById(`home_${hash.substring(1)}`);
+        if (targetDom) {
+            targetDom.click();
+        }
+    }
+});
